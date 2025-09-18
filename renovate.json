@@ -1,1 +1,3 @@
-{}
+{
+  "extends": ["gitlab>development/devops/tooling/renovate-configuration"]
+}
