@@ -19,6 +19,7 @@ module.exports = {
 By looking at the logs it seem that the configured endpoint is correctly read.
 
 <details>
+  
 ```
 DEBUG: Combined config
        "config": {
@@ -35,11 +36,13 @@ DEBUG: Combined config
 ...
        }
 ```
+
 </details>
 
 But it seem that when trying to fetch the preset it use antoher url
 
 <details>
+  
 ```
 DEBUG: Repository config (repository=company/development/devops/containers-images/cicd/layer-0)
        "fileName": "renovate.json",
@@ -51,6 +54,7 @@ DEBUG: hostRules: no authentication for gitlab.com (repository=development/devop
 DEBUG: Using queue: host=gitlab.com, concurrency=16 (repository=development/devops/containers-images/cicd/layer-0)
 DEBUG: GET https://gitlab.com/api/v4/projects/company%2Fdevelopment%2Fdevops%2Ftooling%2Frenovate-configuration = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=196) (repository=company/development/devops/containers-images/cicd/layer-0)
 DEBUG: GitLab API 404 (repository=company/development/devops/containers-images/cicd/layer-0)
+
 ```
 
 </details>
