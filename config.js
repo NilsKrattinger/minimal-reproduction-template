@@ -9,7 +9,7 @@ module.exports = {
   prHourlyLimit: 30,
   prConcurrentLimit: 30,
   timezone: "Europe/Paris",
-  packageRules: [
+  hostRules: [
     {
       matchHost: "gitlab.company.com",
       hostType: "gitlab",
